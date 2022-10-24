@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <input type="email" id="eMail" placeholder="email" />
+    <div class="container text-center">
       Inserisci qui la tua email
+      <input type="email" id="eMail" placeholder="email" />
       <button onclick="registerMail() ; return false">Inserisci mail</button>
       <div id="result"></div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 text-center">
       <div>
         <h4>Numeri del giocatore</h4>
         <div id="resultUtente"></div>
@@ -34,7 +34,7 @@
         <div id="counterPc">Vittorie del pc:</div>
       </div>
 
-      <div id="risultato"></div>
+      <div id="risultato" class="bg-success text-white"></div>
 
       <div>
         <button onclick="numberRandom();return false">Estrai numeri</button>
