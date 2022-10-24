@@ -1,11 +1,13 @@
 let eMail = document.getElementById("eMail");
 
 
-let emailTrue = true;
-
 
 function registerMail(){
-    const mail = eMail.value   //Email che inserirà l'utente
+
+    const mail = eMail.value  //Email che inserirà l'utente
+    
+    let emailTrue = false;
+
 
     let mailRegistered = ["michele.n@virgilio.it", "paolo.nicoletti99@gmail.com", "carde.elisa@gmail.com"];
 
@@ -13,13 +15,15 @@ function registerMail(){
 
         if ( mail === mailRegistered[i] ){
             console.log("benvenuto");
-            emailTrue = false;
-        }
-         if ( mail != mailRegistered[i] ){
-            console.log("registrati");
             emailTrue = true;
-        }
-            
-        
+        }  
+    }
+
+    if (emailTrue === true) {
+        document.getElementById("result").innerHTML = `<p>Welcome</p>`
+    }
+
+    else {
+        document.getElementById("result").innerHTML = `<p>Sign Up</p>`
     }
 }
