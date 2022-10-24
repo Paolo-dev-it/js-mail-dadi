@@ -15,20 +15,24 @@
       <div id="result"></div>
     </div>
 
-    <div>
-      <p id="numberUser"></p>
-      <button onclick="numberUtente() ; return false">
-        Estrai numero utente
-      </button>
-      <div id="resultUtente"></div>
-    </div>
+    <button onclick="numberRandom() ; return false">Estrai numeri</button>
 
-    <div>
-      <p id="numberPc"></p>
-      <button onclick="numberComputer() ; return false">
-        Estrai numero computer
-      </button>
-      <div id="resultPc"></div>
+    <div class="container mt-5">
+      <div>
+        <h4>Numeri del giocatore</h4>
+        <div id="resultUtente"></div>
+      </div>
+
+      <div>
+        <h4>Numeri del pc</h4>
+        <div id="resultPc"></div>
+      </div>
+
+      <div id="risultato"></div>
+
+      <div>
+        <button onclick="numberRandom();return false">Estrai numeri</button>
+      </div>
     </div>
     <script src="./assets/js/main.js"></script>
   </body>

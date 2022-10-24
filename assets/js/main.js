@@ -29,10 +29,25 @@ function registerMail(){
 
 // Funzioni sorteggio numeri
 
-function numberUtente(){
-    document.getElementById("resultUtente").innerHTML = Math.round(Math.random() * 6);
+function numberRandom(){
+    let player =  document.getElementById("resultUtente").innerHTML = Math.round(Math.random() * 6);
+    let computer = document.getElementById("resultPc").innerHTML = Math.round(Math.random() * 6);
+
+    if (player > computer){
+        document.getElementById("risultato").innerHTML = `<p>Ha vinto il giocatore</p>`
+
+    }
+
+    else if (player < computer) {
+        document.getElementById("risultato").innerHTML = `<p>Ha vinto il computer</p>`
+    }
+
+    else {
+       document.getElementById("risultato").innerHTML = `<p>Ha vinto il computer</p>` 
+    }
+
+    
+
+    
 }
 
-function numberComputer(){
-    document.getElementById("resultPc").innerHTML = Math.round(Math.random() * 6);
-}
